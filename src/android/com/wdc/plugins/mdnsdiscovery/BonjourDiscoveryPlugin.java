@@ -45,14 +45,18 @@ public class BonjourDiscoveryPlugin extends CordovaPlugin  {
                 @Override
                 public void onSuccess(DNSDevice[] deviceList) {
                     if (deviceList != null){
+                    	Log.d(TAG, "Device List " + deviceList.length);
                         String jsonResponse = null;
                         for (int i = 0;i <deviceList.length;i++){
-                            Log.d(TAG, (deviceList[i].getIpAddress()));
+                            Log.d(TAG, "IP: "+ (deviceList[i].getIpAddress()));
                             jsonResponse = getJSONArray(deviceList);
                         }
                         if (callbackContext != null){
                             callbackContext.success(jsonResponse);
                         }
+                    } else {
+                    	Log.w(TAG, "Device List is empty");
+                    	callbackContext.error("Device List is empty");
                     }
                 }
 
