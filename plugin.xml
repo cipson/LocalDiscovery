@@ -23,7 +23,7 @@
 	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/concurrency/AutoResetEvent.java" target-dir="src/com/wdc/plugins/mdnsdiscovery/concurrency/"/>
 	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/concurrency/ManualResetEvent.java" target-dir="src/com/wdc/plugins/mdnsdiscovery/concurrency/"/>
 	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/concurrency/WaitHandle.java" target-dir="src/com/wdc/plugins/mdnsdiscovery/concurrency/"/>
-	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/DeviceDiscoveryPlugin.java" target-dir="src/com/wdc/plugins/mdnsdiscovery/"/>
+	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/BonjourDiscoveryPlugin.java" target-dir="src/com/wdc/plugins/mdnsdiscovery/"/>
 	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/DeviceFinder.java" target-dir="src/com/wdc/plugins/mdnsdiscovery/"/>
 	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/DeviceScanner.java" target-dir="src/com/wdc/plugins/mdnsdiscovery/"/>
 	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/DNSDevice.java" target-dir="src/com/wdc/plugins/mdnsdiscovery/"/>
