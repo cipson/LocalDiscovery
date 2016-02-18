@@ -20,26 +20,26 @@
       </feature>
     </config-file>
 
-	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/concurrency/AutoResetEvent.java " target-dir="src/com/wdc/plugins/mdnsdiscovery/concurrency/"/>
-	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/concurrency/ManualResetEvent.java " target-dir="src/com/wdc/plugins/mdnsdiscovery/concurrency/"/>
-	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/concurrency/WaitHandle.java " target-dir="src/com/wdc/plugins/mdnsdiscovery/concurrency/"/>
-	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/DeviceDiscoveryPlugin.java " target-dir="src/com/wdc/plugins/mdnsdiscovery/"/>
-	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/DeviceFinder.java " target-dir="src/com/wdc/plugins/mdnsdiscovery/"/>
-	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/DeviceScanner.java " target-dir="src/com/wdc/plugins/mdnsdiscovery/"/>
-	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/DNSDevice.java " target-dir="src/com/wdc/plugins/mdnsdiscovery/"/>
-	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/events/EventBase.java " target-dir="src/com/wdc/plugins/mdnsdiscovery/events/"/>
-	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/events/EventHandler.java " target-dir="src/com/wdc/plugins/mdnsdiscovery/events/"/>
-	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/events/EventTask.java " target-dir="src/com/wdc/plugins/mdnsdiscovery/events/"/>
-	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/Logger.java " target-dir="src/com/wdc/plugins/mdnsdiscovery/"/>
-	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/mdns/ByteReader.java " target-dir="src/com/wdc/plugins/mdnsdiscovery/mdns/"/>
-	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/mdns/DNSEntry.java " target-dir="src/com/wdc/plugins/mdnsdiscovery/mdns/"/>
-	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/mdns/DNSMessage.java " target-dir="src/com/wdc/plugins/mdnsdiscovery/mdns/"/>
-	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/mdns/DNSQuestion.java " target-dir="src/com/wdc/plugins/mdnsdiscovery/mdns/"/>
-	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/mdns/DNSRecord.java " target-dir="src/com/wdc/plugins/mdnsdiscovery/mdns/"/>
-	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/mdns/MDNSDeviceItem.java " target-dir="src/com/wdc/plugins/mdnsdiscovery/mdns/"/>
-	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/mdns/MDNSFinder.java " target-dir="src/com/wdc/plugins/mdnsdiscovery/mdns/"/>
-	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/mdns/MDNSFinderService.java " target-dir="src/com/wdc/plugins/mdnsdiscovery/mdns/"/>
-	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/WDDeviceFinder.java " target-dir="src/com/wdc/plugins/mdnsdiscovery/"/>
+	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/concurrency/AutoResetEvent.java" target-dir="src/com/wdc/plugins/mdnsdiscovery/concurrency/"/>
+	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/concurrency/ManualResetEvent.java" target-dir="src/com/wdc/plugins/mdnsdiscovery/concurrency/"/>
+	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/concurrency/WaitHandle.java" target-dir="src/com/wdc/plugins/mdnsdiscovery/concurrency/"/>
+	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/DeviceDiscoveryPlugin.java" target-dir="src/com/wdc/plugins/mdnsdiscovery/"/>
+	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/DeviceFinder.java" target-dir="src/com/wdc/plugins/mdnsdiscovery/"/>
+	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/DeviceScanner.java" target-dir="src/com/wdc/plugins/mdnsdiscovery/"/>
+	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/DNSDevice.java" target-dir="src/com/wdc/plugins/mdnsdiscovery/"/>
+	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/events/EventBase.java" target-dir="src/com/wdc/plugins/mdnsdiscovery/events/"/>
+	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/events/EventHandler.java" target-dir="src/com/wdc/plugins/mdnsdiscovery/events/"/>
+	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/events/EventTask.java" target-dir="src/com/wdc/plugins/mdnsdiscovery/events/"/>
+	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/Logger.java" target-dir="src/com/wdc/plugins/mdnsdiscovery/"/>
+	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/mdns/ByteReader.java" target-dir="src/com/wdc/plugins/mdnsdiscovery/mdns/"/>
+	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/mdns/DNSEntry.java" target-dir="src/com/wdc/plugins/mdnsdiscovery/mdns/"/>
+	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/mdns/DNSMessage.java" target-dir="src/com/wdc/plugins/mdnsdiscovery/mdns/"/>
+	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/mdns/DNSQuestion.java" target-dir="src/com/wdc/plugins/mdnsdiscovery/mdns/"/>
+	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/mdns/DNSRecord.java" target-dir="src/com/wdc/plugins/mdnsdiscovery/mdns/"/>
+	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/mdns/MDNSDeviceItem.java" target-dir="src/com/wdc/plugins/mdnsdiscovery/mdns/"/>
+	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/mdns/MDNSFinder.java" target-dir="src/com/wdc/plugins/mdnsdiscovery/mdns/"/>
+	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/mdns/MDNSFinderService.java" target-dir="src/com/wdc/plugins/mdnsdiscovery/mdns/"/>
+	<source-file src="src/android/com/wdc/plugins/mdnsdiscovery/WDDeviceFinder.java" target-dir="src/com/wdc/plugins/mdnsdiscovery/"/>
   </platform>
 <!-- 
   <platform name="ios">
