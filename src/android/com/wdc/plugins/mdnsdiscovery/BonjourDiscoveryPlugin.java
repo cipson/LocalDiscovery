@@ -41,7 +41,7 @@ public class BonjourDiscoveryPlugin extends CordovaPlugin  {
         }
 
         if (action.equals(COMMAND_START_SCAN)) {
-            mDeviceScanner.openDmc(mActivity, new DeviceScanner.DeviceScannerListener() {
+            mDeviceScanner.openDmc(mContext, new DeviceScanner.DeviceScannerListener() {
                 @Override
                 public void onSuccess(DNSDevice[] deviceList) {
                     if (deviceList != null){
