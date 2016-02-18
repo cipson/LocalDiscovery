@@ -49,8 +49,8 @@ public class BonjourDiscoveryPlugin extends CordovaPlugin  {
                         String jsonResponse = null;
                         for (int i = 0;i <deviceList.length;i++){
                             Log.d(TAG, "IP: "+ (deviceList[i].getIpAddress()));
-                            jsonResponse = getJSONArray(deviceList);
                         }
+                        jsonResponse = getJSONArray(deviceList);
                         if (callbackContext != null){
                             callbackContext.success(jsonResponse);
                         }
