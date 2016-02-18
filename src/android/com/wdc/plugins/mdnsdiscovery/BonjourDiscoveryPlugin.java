@@ -15,8 +15,8 @@ import org.json.JSONObject;
 /**
  * Copyright 2015 Western Digital Corporation. All rights reserved.
  */
-public class MdnsDeviceDiscoveryPlugin extends CordovaPlugin  {
-    private static final String TAG = MdnsDeviceDiscoveryPlugin.class.getName();
+public class BonjourDiscoveryPlugin extends CordovaPlugin  {
+    private static final String TAG = BonjourDiscoveryPlugin.class.getName();
     private static final String COMMAND_START_SCAN = "start_scan";
     private static final String COMMAND_STOP_SCAN = "stop_scan";
 
