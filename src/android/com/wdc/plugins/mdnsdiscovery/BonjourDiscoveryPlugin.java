@@ -58,6 +58,7 @@ public class BonjourDiscoveryPlugin extends CordovaPlugin  {
                     	Log.w(TAG, "Device List is empty");
                     	callbackContext.error("Device List is empty");
                     }
+                    mDeviceScanner.closeDmc();
                 }
 
                 @Override
