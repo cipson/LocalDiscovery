@@ -1,5 +1,6 @@
 package com.wdc.plugins.mdnsdiscovery;
 
+import org.json.JSONObject;
 /**
  * Copyright 2015 Western Digital Corporation. All rights reserved.
  */
@@ -57,5 +58,20 @@ public class DNSDevice {
 
     public void setVendor(String vendor) {
         this.vendor = vendor;
+    }
+    
+    public JSONObject getJSON(){
+        JSONObject json = new JSONObject();
+        try {
+            json.put("name", name);
+            json.put("ipAddress", ipAddress);
+            json.put("modelNumber", modelNumber);
+            json.put("serialNumner", serialNumner);
+            json.put("modelName", modelName);
+            json.put("vendor", vendor);
+        }catch (Exception e){
+
+        }
+        return json;
     }
 }

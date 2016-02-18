@@ -32,7 +32,7 @@ public class DeviceScanner {
             throw new IllegalArgumentException("Context and listener cannot be null");
         }
         mDeviceScannerListener = listener;
-        foundDevices = new ArrayList<>();
+        foundDevices = new ArrayList<DNSDevice>();
         new Thread()
         {
             public void run()

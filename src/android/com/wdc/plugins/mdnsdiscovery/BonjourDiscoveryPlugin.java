@@ -35,35 +35,52 @@ public class BonjourDiscoveryPlugin extends CordovaPlugin  {
     public boolean execute(String action, JSONArray args, CallbackContext callbackCxt) throws JSONException {
         Log.e(TAG, "Cordova action "+action);
         this.callbackContext = callbackCxt;
-        if (scanner == null){
-            callbackContext.failure("scanner is null");
+        if (mDeviceScanner == null){
+            callbackContext.error("scanner is null");
             return false;
         }
 
         if (action.equals(COMMAND_START_SCAN)) {
-            scanner.openDmc(mActivity, new DeviceScanner.DeviceScannerListener() {
+            mDeviceScanner.openDmc(mActivity, new DeviceScanner.DeviceScannerListener() {
                 @Override
                 public void onSuccess(DNSDevice[] deviceList) {
                     if (deviceList != null){
+                        String jsonResponse = null;
                         for (int i = 0;i <deviceList.length;i++){
-                            Log.d(tag, (deviceList[i].getIpAddress());
+                            Log.d(TAG, (deviceList[i].getIpAddress()));
+                            jsonResponse = getJSONArray(deviceList);
                         }
                         if (callbackContext != null){
-                            callbackContext.success(deviceList);
+                            callbackContext.success(jsonResponse);
                         }
                     }
                 }
 
                 @Override
                 public void onFailure(String reason) {
-                    callbackContext.failure(reason);
+                    callbackContext.error(reason);
                 }
             });
             return true;
         } else if (action.equals(COMMAND_STOP_SCAN)){
-            scanner.closeDmc();
+            mDeviceScanner.closeDmc();
             return true;
         }
         return false;
+    }
+    
+    
+    private String getJSONArray(DNSDevice[] deviceList){
+        JSONObject json = new JSONObject();
+        JSONArray jsonArray = new JSONArray();
+        try {
+            for (int i = 0; i < deviceList.length; i++) {
+                jsonArray.put(deviceList[i].getJSON());
+            }
+            json.put("deviceList", jsonArray);
+        }catch (Exception e) {
+            Log.e(TAG, "getJSONArray " +e.getMessage());
+        }
+        return json.toString();
     }
 }
